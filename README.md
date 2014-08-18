@@ -1,17 +1,20 @@
-Double Espresso
-===============
+Skinny Latte
+============
 
-A pure Gradle port of the [Espresso][1] testing utility for Android!
+A shot of Android [Espresso][espresso] that won't runneth over your cup.
 
-Note: From android gradle plugin 0.9, use ``androidTestCompile`` for dependencies instead of ``instrumentTestCompile`` (see [plugin migration instructions][6])
+Libraries should be small and focused, especially when the library is intended for resource
+constrained devices. Android Test Kit's Espresso relies on relatively large dependencies such as
+Guava which consumes nearly 30% of the total number of methods supported by Dalvik.
 
-No more fumbling with local jars or dependency conflicts. Pull it in with one line:
+Skinny Latte removes those dependencies to avoid Dalvik's >64K method limit, without the need to
+pre-process dependencies using ProGuard. This reduces the amount of time spent waiting for dex
+during dev-test cycles.  The Espresso API is unchanged except for dependency declarations that have
+been replaced with small local projects.
+
 ```groovy
-androidTestCompile 'com.jakewharton.espresso:espresso:1.1-r3'
-```
-Espresso also has an add-on module which provides helpers for the support-v4 library:
-```groovy
-androidTestCompile 'com.jakewharton.espresso:espresso-support-v4:1.1-r3'
+androidTestCompile 'com.jameswald.skinnylatte:espresso:1.1-r1'
+androidTestCompile 'com.jameswald.skinnylatte:espresso-support-v4:1.1-r1'
 ```
 
 Configure the build to use Espresso's custom test runner:
@@ -21,85 +24,34 @@ defaultConfig {
 }
 ```
 
-The Espresso classes have not been modified from the original version. This exists only as a means
-of creating artifacts for native consumption by the new Gradle Android build system. This project
-will be immediately deprecated once Google releases a proper version of Espresso that can be
-consumed without hassle. A diff of the changes is [available to view][5].
-
-**DO NOT** submit pull requests for features, functionality, or bug fixes. Direct those to
-[the original project][1] on Google Code. Only changes to which further the port to Gradle will be
+The Espresso classes have only been modified to replace dependencies (see the [diff][diff]). No
+features have been added to the API. Only changes that remove or replace dependencies will be
 accepted.
-
-
-
-Duplicated Dependencies
------------------------
-
-Due to [a bug][3] in the current Android plugin, you may need to exclude dependencies which are
-duplicated in both the app and test app.
-
-For example, if you have a dependency on [Dagger][4] you will need to manually exclude it from
-the test dependency for the time being.
-```groovy
-androidTestCompile('com.jakewharton.espresso:espresso:1.1-r3') {
-  exclude group: 'com.squareup.dagger'
-}
-```
-
-The following are the dependencies of Espresso which may need to be temporarily excluded:
-```
-com.squareup.dagger:dagger:1.2.1
-javax.inject:javax.inject:1
-javax.annotation:javax.annotation-api:1.2
-com.google.guava:guava:16.0
-com.google.code.findbugs:jsr305:1.3.9
-org.hamcrest:hamcrest-core:1.1
-org.hamcrest:hamcrest-library:1.1
-org.hamcrest:hamcrest-integration:1.1
-```
-and those of the 'support-v4' module:
-```
-com.android.support:support-v4:19.0.1
-```
-
-
 
 Notes
 -----
 
-The following things are worth noting from the migration:
+This is currently based on Jake Wharton's [Double Espresso][double-espresso], a pure Gradle port of
+Espresso.
 
- *  Module names have been shuffled to be structured more logically.
+License
+-------
 
-        OLD                        NEW
-        ------------------------   ------------------------
-        espresso/lib/              espresso/
-        espresso/libtests/         espresso-tester/ (src/instrumentTest)
-        espresso/contrib/          espresso-support-v4/
-        espresso/contribtests/     espresso-support-v4-tester/ (src/instrumentTest)
-        testapp/                   espresso-sample/
-        testapp_test/              espresso-sample/ (src/instrumentTest)
-        testrunner/                espresso-runner/
-        testrunner-runtime/        espresso-runner-runtime/
+    Copyright 2014 James Wald
 
- * The Maven build used the 'testapp' module for the 'libtests', 'contribtests', and 'testapp_test'
-   tests. Since Gradle does not easily facilitate this, specific parts of 'testapp' were moved into
-   the `src/main/` folders of the 'espress-tester' and 'espresso-support-v4-tester' modules for
-   direct use.
- * Declaring activities inside the instrumentation test for library projects [is not supported][2].
-   To work around this, we mirror the Maven technique of having "tester" projects adjacent to the
-   libraries. The activities the tests exercise are in `src/main/` with a proper manifest.
- * Dagger was updated to version 1.2.1.
- * Guava was updated to version 16.0.
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 
-
-
-
-
- [1]: https://code.google.com/p/android-test-kit/
- [2]: http://b.android.com/57819
- [3]: http://b.android.com/65445
- [4]: http://square.github.io/dagger
- [5]: https://github.com/JakeWharton/double-espresso/compare/master...gradle
- [6]: http://tools.android.com/tech-docs/new-build-system/migrating_to_09
+ [espresso]: https://code.google.com/p/android-test-kit/
+ [double-espresso]: https://github.com/JakeWharton/double-espresso
+ [diff]: https://github.com/jameswald/skinny-latte/compare/gradle...skinny
