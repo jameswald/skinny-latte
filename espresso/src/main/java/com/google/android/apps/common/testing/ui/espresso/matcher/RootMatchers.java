@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso.matcher;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.anyOf;
 
@@ -9,7 +9,7 @@ import com.google.android.apps.common.testing.testrunner.ActivityLifecycleMonito
 import com.google.android.apps.common.testing.testrunner.Stage;
 import com.google.android.apps.common.testing.ui.espresso.NoActivityResumedException;
 import com.google.android.apps.common.testing.ui.espresso.Root;
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.app.Activity;
 import android.os.IBinder;

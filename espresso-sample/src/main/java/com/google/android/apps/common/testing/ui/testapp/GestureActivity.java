@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.testapp;
 
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.app.Activity;
 import android.os.Bundle;

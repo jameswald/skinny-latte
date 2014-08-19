@@ -1,9 +1,9 @@
 package com.google.android.apps.common.testing.ui.espresso.base;
 
-import static com.google.common.base.Preconditions.checkArgument;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Preconditions.checkState;
-import static com.google.common.base.Throwables.propagate;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkArgument;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Throwables.propagate;
 
 import com.google.android.apps.common.testing.ui.espresso.IdlingPolicies;
 import com.google.android.apps.common.testing.ui.espresso.IdlingPolicy;
@@ -11,9 +11,9 @@ import com.google.android.apps.common.testing.ui.espresso.InjectEventSecurityExc
 import com.google.android.apps.common.testing.ui.espresso.UiController;
 import com.google.android.apps.common.testing.ui.espresso.base.IdlingResourceRegistry.IdleNotificationCallback;
 import com.google.android.apps.common.testing.ui.espresso.base.QueueInterrogator.QueueState;
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.annotations.VisibleForTesting;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.annotation.SuppressLint;
 import android.os.Build;

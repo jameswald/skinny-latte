@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
 import com.google.android.apps.common.testing.ui.espresso.UiController;
 import com.google.android.apps.common.testing.ui.espresso.action.MotionEvents.DownResultHolder;

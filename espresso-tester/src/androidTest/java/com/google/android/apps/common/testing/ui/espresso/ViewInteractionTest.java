@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso;
 
-import static com.google.common.base.Throwables.propagate;
+import static com.jameswald.skinnylatte.common.base.Throwables.propagate;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
@@ -13,8 +13,8 @@ import static org.mockito.MockitoAnnotations.initMocks;
 import com.google.android.apps.common.testing.testrunner.ActivityLifecycleMonitor;
 import com.google.android.apps.common.testing.testrunner.ActivityLifecycleMonitorRegistry;
 import com.google.android.apps.common.testing.ui.espresso.matcher.RootMatchers;
-import com.google.common.base.Optional;
-import com.google.common.util.concurrent.MoreExecutors;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.util.concurrent.MoreExecutors;
 
 import android.test.AndroidTestCase;
 import android.view.View;

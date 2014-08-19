@@ -1,13 +1,13 @@
 package com.google.android.apps.common.testing.ui.espresso.matcher;
 
 import static com.google.android.apps.common.testing.ui.espresso.util.TreeIterables.breadthFirstViewTraversal;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 import static org.hamcrest.Matchers.is;
 
 import com.google.android.apps.common.testing.ui.espresso.util.HumanReadables;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
+import com.jameswald.skinnylatte.common.base.Predicate;
+import com.jameswald.skinnylatte.common.collect.Iterables;
 
 import android.content.res.Resources;
 import android.graphics.Rect;

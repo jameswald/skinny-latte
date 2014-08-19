@@ -3,14 +3,14 @@ package com.google.android.apps.common.testing.ui.espresso.util;
 import static com.google.android.apps.common.testing.ui.espresso.util.TreeIterables.depthFirstViewTraversalWithDistance;
 
 import com.google.android.apps.common.testing.ui.espresso.util.TreeIterables.ViewAndDistance;
-import com.google.common.base.Function;
-import com.google.common.base.Joiner;
-import com.google.common.base.Objects;
-import com.google.common.base.Objects.ToStringHelper;
-import com.google.common.base.Optional;
-import com.google.common.base.Preconditions;
-import com.google.common.base.Strings;
-import com.google.common.collect.Iterables;
+import com.jameswald.skinnylatte.common.base.Function;
+import com.jameswald.skinnylatte.common.base.Joiner;
+import com.jameswald.skinnylatte.common.base.Objects;
+import com.jameswald.skinnylatte.common.base.Objects.ToStringHelper;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Preconditions;
+import com.jameswald.skinnylatte.common.base.Strings;
+import com.jameswald.skinnylatte.common.collect.Iterables;
 
 import android.content.res.Resources;
 import android.os.Build;

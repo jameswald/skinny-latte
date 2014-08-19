@@ -1,8 +1,8 @@
 package com.google.android.apps.common.testing.ui.espresso.base;
 
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Preconditions.checkState;
-import static com.google.common.base.Throwables.propagate;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Throwables.propagate;
 
 import android.os.Handler;
 import android.os.Looper;

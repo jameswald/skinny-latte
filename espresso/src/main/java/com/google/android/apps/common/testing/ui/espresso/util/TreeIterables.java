@@ -1,13 +1,13 @@
 package com.google.android.apps.common.testing.ui.espresso.util;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Function;
-import com.google.common.collect.AbstractIterator;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.jameswald.skinnylatte.common.annotations.VisibleForTesting;
+import com.jameswald.skinnylatte.common.base.Function;
+import com.jameswald.skinnylatte.common.collect.AbstractIterator;
+import com.jameswald.skinnylatte.common.collect.Iterables;
+import com.jameswald.skinnylatte.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Maps;
 
 import android.view.View;
 import android.view.ViewGroup;

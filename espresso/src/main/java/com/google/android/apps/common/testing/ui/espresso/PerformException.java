@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
 /**
  * Indicates that an exception occurred while performing a ViewAction on the UI thread.

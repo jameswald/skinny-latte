@@ -4,14 +4,14 @@ import static com.google.android.apps.common.testing.ui.espresso.Espresso.onView
 import static com.google.android.apps.common.testing.ui.espresso.assertion.ViewAssertions.matches;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.isDisplayed;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.isRoot;
-import static com.google.common.base.Throwables.getStackTraceAsString;
+import static com.jameswald.skinnylatte.common.base.Throwables.getStackTraceAsString;
 import static org.hamcrest.Matchers.not;
 
 import com.google.android.apps.common.testing.ui.espresso.AmbiguousViewMatcherException;
 import com.google.android.apps.common.testing.ui.espresso.NoMatchingViewException;
 import com.google.android.apps.common.testing.ui.espresso.ViewAssertion;
 import com.google.android.apps.common.testing.ui.espresso.tester.MainActivity;
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.test.ActivityInstrumentationTestCase2;
 import android.view.View;

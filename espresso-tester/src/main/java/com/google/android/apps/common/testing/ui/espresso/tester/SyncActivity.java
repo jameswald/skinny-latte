@@ -1,8 +1,8 @@
 package com.google.android.apps.common.testing.ui.espresso.tester;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
-import com.google.common.annotations.VisibleForTesting;
+import com.jameswald.skinnylatte.common.annotations.VisibleForTesting;
 
 import android.app.Activity;
 import android.os.Bundle;

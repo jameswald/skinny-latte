@@ -2,16 +2,16 @@ package com.google.android.apps.common.testing.ui.espresso.assertion;
 
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.assertThat;
 import static com.google.android.apps.common.testing.ui.espresso.util.TreeIterables.breadthFirstViewTraversal;
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 import static org.hamcrest.Matchers.is;
 
 import com.google.android.apps.common.testing.ui.espresso.NoMatchingViewException;
 import com.google.android.apps.common.testing.ui.espresso.ViewAssertion;
 import com.google.android.apps.common.testing.ui.espresso.util.HumanReadables;
-import com.google.common.base.Optional;
-import com.google.common.base.Preconditions;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Preconditions;
+import com.jameswald.skinnylatte.common.base.Predicate;
+import com.jameswald.skinnylatte.common.collect.Iterables;
 
 import android.util.Log;
 import android.view.View;

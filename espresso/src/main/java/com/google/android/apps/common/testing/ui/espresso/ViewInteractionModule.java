@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
 import com.google.android.apps.common.testing.ui.espresso.base.RootViewPicker;
 import com.google.android.apps.common.testing.ui.espresso.base.ViewFinderImpl;

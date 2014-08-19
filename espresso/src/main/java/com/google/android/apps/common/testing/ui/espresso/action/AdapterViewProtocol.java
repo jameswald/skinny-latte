@@ -1,7 +1,7 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
-import static com.google.common.base.Preconditions.checkNotNull;
-import com.google.common.base.Optional;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.view.View;
 import android.widget.Adapter;

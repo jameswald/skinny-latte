@@ -7,7 +7,7 @@ import com.google.android.apps.common.testing.testrunner.inject.TargetContext;
 import com.google.android.apps.common.testing.ui.espresso.FailureHandler;
 import com.google.android.apps.common.testing.ui.espresso.Root;
 import com.google.android.apps.common.testing.ui.espresso.UiController;
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.content.Context;
 import android.os.Build;

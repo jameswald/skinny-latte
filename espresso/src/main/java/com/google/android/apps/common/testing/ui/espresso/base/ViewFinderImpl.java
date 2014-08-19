@@ -1,19 +1,19 @@
 package com.google.android.apps.common.testing.ui.espresso.base;
 
 import static com.google.android.apps.common.testing.ui.espresso.util.TreeIterables.breadthFirstViewTraversal;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 
 import com.google.android.apps.common.testing.ui.espresso.AmbiguousViewMatcherException;
 import com.google.android.apps.common.testing.ui.espresso.NoMatchingViewException;
 import com.google.android.apps.common.testing.ui.espresso.ViewFinder;
 import com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers;
-import com.google.common.base.Joiner;
-import com.google.common.base.Optional;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.base.Joiner;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Predicate;
+import com.jameswald.skinnylatte.common.collect.Iterables;
+import com.jameswald.skinnylatte.common.collect.Iterators;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.os.Looper;
 import android.view.View;

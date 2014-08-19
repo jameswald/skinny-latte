@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.nullValue;
 
 import com.google.android.apps.common.testing.ui.espresso.NoMatchingViewException;
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.test.InstrumentationTestCase;
 import android.view.View;

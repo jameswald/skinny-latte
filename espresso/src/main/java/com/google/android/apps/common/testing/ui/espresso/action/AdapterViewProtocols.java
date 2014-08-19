@@ -1,11 +1,11 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.isDisplayingAtLeast;
-import static com.google.common.base.Preconditions.checkArgument;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkArgument;
 
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Range;
+import com.jameswald.skinnylatte.common.base.Optional;
+import com.jameswald.skinnylatte.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Range;
 
 import android.os.Build;
 import android.view.View;

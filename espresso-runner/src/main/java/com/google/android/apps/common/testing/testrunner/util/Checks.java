@@ -1,7 +1,7 @@
 package com.google.android.apps.common.testing.testrunner.util;
 
 /**
- * Directly depending on com.google.common.base.* can cause build and runtime issues for some
+ * Directly depending on com.jameswald.skinnylatte.common.base.* can cause build and runtime issues for some
  * applications.
  *
  * To totally avoid these problems we would need to set certain flags on the device prior to

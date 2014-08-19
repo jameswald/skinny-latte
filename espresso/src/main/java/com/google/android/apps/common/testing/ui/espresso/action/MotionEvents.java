@@ -1,12 +1,11 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
 import com.google.android.apps.common.testing.testrunner.UsageTrackerRegistry;
 import com.google.android.apps.common.testing.ui.espresso.InjectEventSecurityException;
 import com.google.android.apps.common.testing.ui.espresso.PerformException;
 import com.google.android.apps.common.testing.ui.espresso.UiController;
-import com.google.common.annotations.VisibleForTesting;
 
 import android.os.SystemClock;
 import android.util.Log;
@@ -20,7 +19,6 @@ final class MotionEvents {
 
   private static final String TAG = MotionEvents.class.getSimpleName();
 
-  @VisibleForTesting
   static final int MAX_CLICK_ATTEMPTS = 3;
 
   private MotionEvents() {

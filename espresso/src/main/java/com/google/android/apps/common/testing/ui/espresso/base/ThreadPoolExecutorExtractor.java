@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso.base;
 
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.os.Build;
 import android.os.Handler;

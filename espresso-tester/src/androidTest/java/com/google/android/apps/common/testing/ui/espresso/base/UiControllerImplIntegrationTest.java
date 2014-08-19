@@ -5,7 +5,7 @@ import com.google.android.apps.common.testing.ui.espresso.UiController;
 import com.google.android.apps.common.testing.ui.espresso.util.HumanReadables;
 import com.google.android.apps.common.testing.ui.espresso.tester.R;
 import com.google.android.apps.common.testing.ui.espresso.tester.SendActivity;
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.app.Activity;
 import android.app.Instrumentation;

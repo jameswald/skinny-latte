@@ -2,7 +2,7 @@ package com.google.android.apps.common.testing.ui.espresso.base;
 
 import static com.google.android.apps.common.testing.ui.espresso.matcher.RootMatchers.isDialog;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.RootMatchers.isFocusable;
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 
 import com.google.android.apps.common.testing.testrunner.ActivityLifecycleMonitor;
 import com.google.android.apps.common.testing.testrunner.Stage;
@@ -10,8 +10,8 @@ import com.google.android.apps.common.testing.ui.espresso.NoActivityResumedExcep
 import com.google.android.apps.common.testing.ui.espresso.NoMatchingRootException;
 import com.google.android.apps.common.testing.ui.espresso.Root;
 import com.google.android.apps.common.testing.ui.espresso.UiController;
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.base.Joiner;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.app.Activity;
 import android.os.Looper;

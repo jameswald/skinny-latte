@@ -1,17 +1,19 @@
 package com.google.android.apps.common.testing.ui.espresso;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 
 import com.google.android.apps.common.testing.ui.espresso.util.HumanReadables;
-import com.google.common.base.Optional;
-import com.google.common.collect.ImmutableSet;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.view.View;
 
 import org.hamcrest.Matcher;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * An exception which indicates that a Matcher<View> matched multiple views in the hierarchy when
@@ -55,8 +57,10 @@ public final class AmbiguousViewMatcherException extends RuntimeException
   private static String getErrorMessage(Builder builder) {
     String errorMessage = "";
     if (builder.includeViewHierarchy) {
-      ImmutableSet<View> ambiguousViews =
-        ImmutableSet.<View>builder().add(builder.view1, builder.view2).add(builder.others).build();
+      Set<View> ambiguousViews = new HashSet<View>();
+      ambiguousViews.add(builder.view1);
+      ambiguousViews.add(builder.view2);
+      ambiguousViews.addAll(Arrays.asList(builder.others));
       errorMessage = HumanReadables.getViewHierarchyErrorMessage(builder.rootView,
           Optional.of((List<View>) new ArrayList<View>(ambiguousViews)),
           String.format("'%s' matches multiple views in the hierarchy.", builder.viewMatcher),

@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 
 import android.os.Build;
 import android.view.KeyEvent;

@@ -1,14 +1,14 @@
 package com.google.android.apps.common.testing.ui.espresso.base;
 
-import static com.google.common.base.Preconditions.checkArgument;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkArgument;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 
 import com.google.android.apps.common.testing.ui.espresso.IdlingPolicies;
 import com.google.android.apps.common.testing.ui.espresso.IdlingPolicy;
 import com.google.android.apps.common.testing.ui.espresso.IdlingResource;
 import com.google.android.apps.common.testing.ui.espresso.IdlingResource.ResourceCallback;
-import com.google.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Lists;
 
 import android.os.Handler;
 import android.os.Looper;

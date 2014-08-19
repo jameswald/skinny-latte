@@ -1,8 +1,8 @@
 package com.google.android.apps.common.testing.ui.testapp;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.jameswald.skinnylatte.common.annotations.VisibleForTesting;
+import com.jameswald.skinnylatte.common.collect.Lists;
+import com.jameswald.skinnylatte.common.collect.Maps;
 
 import android.app.Activity;
 import android.content.Context;

@@ -4,7 +4,7 @@ package com.google.android.apps.common.testing.ui.espresso;
 import static com.google.android.apps.common.testing.ui.espresso.Espresso.onView;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.isAssignableFrom;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.isDescendantOfA;
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkNotNull;
 import static org.hamcrest.Matchers.allOf;
 
 import com.google.android.apps.common.testing.ui.espresso.action.AdapterDataLoaderAction;
@@ -12,7 +12,7 @@ import com.google.android.apps.common.testing.ui.espresso.action.AdapterViewProt
 import com.google.android.apps.common.testing.ui.espresso.action.AdapterViewProtocol.AdaptedData;
 import com.google.android.apps.common.testing.ui.espresso.action.AdapterViewProtocols;
 import com.google.android.apps.common.testing.ui.espresso.matcher.RootMatchers;
-import com.google.common.base.Optional;
+import com.jameswald.skinnylatte.common.base.Optional;
 
 import android.view.View;
 import android.view.ViewParent;

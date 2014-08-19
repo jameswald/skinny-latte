@@ -1,6 +1,6 @@
 package com.google.android.apps.common.testing.ui.espresso.action;
 
-import static com.google.common.collect.Iterables.getOnlyElement;
+import static com.jameswald.skinnylatte.common.collect.Iterables.getOnlyElement;
 import static org.hamcrest.Matchers.anything;
 
 import com.google.android.apps.common.testing.testrunner.ActivityLifecycleMonitorRegistry;

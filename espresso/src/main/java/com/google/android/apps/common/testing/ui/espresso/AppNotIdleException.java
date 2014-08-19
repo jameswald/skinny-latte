@@ -1,8 +1,8 @@
 package com.google.android.apps.common.testing.ui.espresso;
 
-import static com.google.common.base.Preconditions.checkState;
+import static com.jameswald.skinnylatte.common.base.Preconditions.checkState;
 
-import com.google.common.base.Joiner;
+import com.jameswald.skinnylatte.common.base.Joiner;
 
 import android.os.Looper;
 
