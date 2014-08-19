@@ -1,10 +1,4 @@
-buildscript {
-  dependencies {
-    classpath 'com.android.tools.build:gradle:0.9.+'
-  }
-}
-
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
   compile 'com.squareup.dagger:dagger:1.2.1'
@@ -15,8 +9,8 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 19
-  buildToolsVersion '19.0.1'
+  compileSdkVersion 20
+  buildToolsVersion '20.0.0'
 
   lintOptions {
     abortOnError false

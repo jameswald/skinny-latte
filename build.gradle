@@ -1,14 +1,16 @@
-allprojects {
-  buildscript {
-    repositories {
-      mavenCentral()
-    }
+buildscript {
+  repositories {
+    mavenCentral()
   }
 
   dependencies {
-    repositories {
-      mavenCentral()
-    }
+    classpath 'com.android.tools.build:gradle:0.12.+'
+  }
+}
+
+allprojects {
+  repositories {
+    mavenCentral()
   }
 
   group = GROUP
