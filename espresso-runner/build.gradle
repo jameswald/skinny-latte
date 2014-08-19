@@ -15,6 +15,11 @@ android {
   lintOptions {
     abortOnError false
   }
+
+  defaultConfig {
+    minSdkVersion 8
+    targetSdkVersion 20
+  }
 }
 
 // Strip ExposedInstrumentationApi from the packaged classes. See the class for reasoning.
