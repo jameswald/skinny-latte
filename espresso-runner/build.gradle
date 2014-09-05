@@ -8,10 +8,10 @@ apply plugin: 'com.android.library'
 
 dependencies {
   compile project(':common')
-  compile 'com.squareup.dagger:dagger:1.2.1'
-  provided 'com.squareup.dagger:dagger-compiler:1.2.1'
-  compile 'javax.annotation:javax.annotation-api:1.2'
-  compile 'com.google.code.findbugs:jsr305:1.3.9'
+  compile rootProject.ext.dagger
+  provided rootProject.ext.daggerCompiler
+  compile rootProject.ext.javaxAnnotationApi
+  compile rootProject.ext.jsr305
 }
 
 android {
@@ -23,8 +23,8 @@ android {
   }
 
   defaultConfig {
-    minSdkVersion 8
-    targetSdkVersion 20
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
   }
 }
 

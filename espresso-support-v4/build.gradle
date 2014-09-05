@@ -8,7 +8,7 @@ apply plugin: 'com.android.library'
 
 dependencies {
   compile project(':espresso')
-  compile 'com.android.support:support-v4:19.0.1'
+  compile rootProject.ext.supportV4
 }
 
 android {
@@ -24,8 +24,8 @@ android {
   }
 
   defaultConfig {
-    minSdkVersion 8
-    targetSdkVersion 20
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
   }
 }
 

@@ -8,10 +8,10 @@ apply plugin: 'com.android.library'
 
 dependencies {
   compile project(':espresso-runner-runtime')
-  provided 'com.squareup.dagger:dagger-compiler:1.2.1'
-  compile 'org.hamcrest:hamcrest-core:1.1'
-  compile 'org.hamcrest:hamcrest-library:1.1'
-  compile 'org.hamcrest:hamcrest-integration:1.1'
+  provided rootProject.ext.daggerCompiler
+  compile rootProject.ext.hamcrestCore
+  compile rootProject.ext.hamcrestLibrary
+  compile rootProject.ext.hamcrestIntegration
 }
 
 android {
@@ -27,8 +27,8 @@ android {
   }
 
   defaultConfig {
-    minSdkVersion 8
-    targetSdkVersion 20
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
   }
 }
 

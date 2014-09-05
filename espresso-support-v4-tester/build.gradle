@@ -7,8 +7,8 @@ buildscript {
 apply plugin: 'com.android.application'
 
 dependencies {
-  compile 'com.android.support:support-v4:19.0.1'
-  compile 'com.android.support:appcompat-v7:19.0.1'
+  compile rootProject.ext.supportV4
+  compile rootProject.ext.appcompatV7
 
   androidTestCompile project(':espresso')
   androidTestCompile(project(':espresso-support-v4')) {
@@ -30,8 +30,8 @@ android {
   }
 
   defaultConfig {
-    minSdkVersion 8
-    targetSdkVersion 20
-    testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+    testInstrumentationRunner rootProject.ext.testInstrumentationRunner
   }
 }
