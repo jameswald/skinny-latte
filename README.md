@@ -20,7 +20,7 @@ androidTestCompile 'com.jameswald.skinnylatte:espresso-support-v4:1.1-r1'
 Configure the build to use Espresso's custom test runner:
 ```groovy
 defaultConfig {
-  testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+  testInstrumentationRunner 'com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner'
 }
 ```
 
