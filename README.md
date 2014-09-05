@@ -13,8 +13,8 @@ during dev-test cycles.  The Espresso API is unchanged except for dependency dec
 been replaced with small local projects.
 
 ```groovy
-androidTestCompile 'com.jameswald.skinnylatte:espresso:1.1-r1'
-androidTestCompile 'com.jameswald.skinnylatte:espresso-support-v4:1.1-r1'
+androidTestCompile 'com.jameswald.skinnylatte:espresso:1.1-r2'
+androidTestCompile 'com.jameswald.skinnylatte:espresso-support-v4:1.1-r2'
 ```
 
 Configure the build to use Espresso's custom test runner:
