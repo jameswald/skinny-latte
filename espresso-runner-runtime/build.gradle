@@ -1,3 +1,9 @@
+buildscript {
+  dependencies {
+    classpath rootProject.ext.androidPlugin
+  }
+}
+
 apply plugin: 'com.android.library'
 
 dependencies {
@@ -5,8 +11,8 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 20
-  buildToolsVersion '20.0.0'
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
 
   defaultConfig {
     minSdkVersion 8

@@ -1,18 +1,20 @@
-buildscript {
-  repositories {
-    mavenCentral()
-  }
-
-  dependencies {
-    classpath 'com.android.tools.build:gradle:0.12.+'
-  }
-}
-
 allprojects {
+  buildscript {
+    repositories {
+      mavenCentral()
+    }
+  }
+
   repositories {
     mavenCentral()
   }
 
   group = GROUP
   version = VERSION_NAME
+}
+
+ext {
+  androidPlugin = 'com.android.tools.build:gradle:0.12.2'
+  compileSdkVersion = 20
+  buildToolsVersion = '20.0.0'
 }
