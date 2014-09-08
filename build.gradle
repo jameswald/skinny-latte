@@ -1,10 +1,14 @@
-allprojects {
-  buildscript {
+buildscript {
     repositories {
-      mavenCentral()
+        mavenCentral()
     }
-  }
 
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.2'
+    }
+}
+
+allprojects {
   repositories {
     mavenCentral()
   }
@@ -14,8 +18,6 @@ allprojects {
 }
 
 ext {
-  androidPlugin = 'com.android.tools.build:gradle:0.12.2'
-
   compileSdkVersion = 20
   buildToolsVersion = '20.0.0'
 
@@ -34,4 +36,6 @@ ext {
   jsr305 = 'com.google.code.findbugs:jsr305:1.3.9'
   mockitoCore = 'org.mockito:mockito-core:1.9.5'
   supportV4 = 'com.android.support:support-v4:19.0.1'
+
+  mavenUploadArchivesPlugin = 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
 }
