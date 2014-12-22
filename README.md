@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Skinny Latte is deprecated by Espresso 2.0 which includes repackaged Guava, Dagger, and Hamcrest dependencies. See
+[Espresso][espresso] for migration instructions.
+
 Skinny Latte
 ============
 
